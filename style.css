@@ -5,15 +5,19 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
 .register-main {
   background: seagreen;
-  width: 100%;
-  height: 100vh;
+  max-width: 100vw;
+  height: 114vh;
 }
 
 .login-main {
   background: seagreen;
-  width: 100%;
+  max-width: 100vw;
   height: 100vh;
 }
 
@@ -25,7 +29,7 @@ body {
 .login-form {
   background: #fff;
   width: 500px;
-  margin: 6% auto;
+  margin: 4% auto;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -152,4 +156,11 @@ body {
   height: 5vh;
   width: 5vh;
 
+}
+
+.anonyyes {
+  width:48%
+}
+.anonyno {
+  width:48%
 }

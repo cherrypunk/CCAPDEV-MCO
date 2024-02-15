@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Simple Login Form Example</title>
+    <title>Registration</title>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,9 +38,16 @@
                     <div class="input-field">
                         <input type="password" placeholder="Confirm Password" autocomplete="confirm-new-password">
                     </div>
+                    <div class="input-field">
+                        <input type="radio" class="btn-check" name="user-type" id="student" autocomplete="off" checked>
+                        <label class="btn btn-outline-success anonyno" for="student">Student</label>
+
+                        <input type="radio" class="btn-check" name="user-type" id="technician" autocomplete="off">
+                        <label class="btn btn-outline-secondary anonyyes" for="technician">Lab Technician</label>
+                    </div>
                 </div>
                 <div class="action">
-                    <button>Create Account</button>
+                    <button onclick="window.location.href='login.html'" target="_blank">Create Account</button>
                 </div>
             </form>
             <div class="action login">

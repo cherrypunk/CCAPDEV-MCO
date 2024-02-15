@@ -1,0 +1,122 @@
+.navbar-custom {
+    background-color: seagreen;
+    border-bottom: 1px solid white;
+    height: 9vh
+}
+.navbar-brand > img {
+    height: 5vh;
+    width: 5vh;
+}
+.btn-custom {
+    background-color: white;
+    color: seagreen;
+    border-color: white;
+}
+.btn-custom:hover {
+    background-color: seagreen;
+    color: white;
+    border-color: white;
+}
+.main-container{
+    height: 85vh;
+    margin-top: 1vh
+}
+.col-2 {
+    background-color: white;
+    padding: 2vh
+}
+.col-7 {
+    background-color: white;
+}
+.col-3 {
+    background-color: white;
+    padding: 2vh
+}
+.calendar {
+    font-size: 1.5vh;
+}
+.bg-gray {
+    background-color: lightgray;
+}
+.time {
+    margin-top: 1vh
+}
+.timedrop {
+    width: 100%
+}
+.btn-custom {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.btn-custom:hover {
+    background-color: seagreen;
+    color: white;
+    border-color: white;
+}
+.book-head {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+.anonymity {
+    margin-top: 1vh;
+}
+.anonyyes {
+    width:48%
+}
+.anonyno {
+    width:48%
+}
+.reservebutton {
+    margin-top: 1vh;
+    background-color: seagreen;
+    color: white;
+    border-color: white;
+}
+.maincomp {
+    width: 100%;
+    margin-bottom: 2vh
+}
+.card-body-comp {
+    height:12vh
+}
+.card-header-comp {
+    background-color: mediumseagreen;
+    color: white
+}
+.comp-full {
+  background-color: seagreen;
+    color: lightgray
+}
+.comp-active {
+    background-color:mediumseagreen;
+    color: white;
+}
+.comp-whole {
+  border: 1px solid black;
+}
+.laboratories {
+    margin-top: 1vh;
+}
+.labdrop {
+    width: 100%
+}
+.labs {
+  margin-bottom: 1vh;
+}
+.occupiedleft {
+  background-color:seagreen;
+  color: white
+}
+.searchgroup {
+  margin-right: 2vw
+}
+.technician {
+  margin-top: 1vh;
+}
+.leftlinks {
+    color: seagreen;
+}
+.deleteright {
+    margin-right: 1vw;
+}

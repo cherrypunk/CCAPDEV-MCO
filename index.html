@@ -80,27 +80,50 @@
     }
     .reservebutton {
         margin-top: 1vh;
+        background-color: seagreen;
+        color: white;
+        border-color: white;
     }
     .maincomp {
         width: 100%;
         margin-bottom: 2vh
     }
-    .card-body {
+    .card-body-comp {
         height:12vh
     }
-    .card-header {
-        background-color: seagreen;
+    .card-header-comp {
+        background-color: mediumseagreen;
+        color: white
+    }
+    .comp-full {
+      background-color: seagreen;
         color: lightgray
     }
     .comp-active {
         background-color:mediumseagreen;
-        color: white
+        color: white;
+    }
+    .comp-whole {
+      border: 1px solid black;
     }
     .laboratories {
         margin-top: 1vh;
     }
     .labdrop {
         width: 100%
+    }
+    .labs {
+      margin-bottom: 1vh;
+    }
+    .occupiedleft {
+      background-color:seagreen;
+      color: white
+    }
+    .searchgroup {
+      margin-right: 2vw
+    }
+    .technician {
+      margin-top: 1vh;
     }
   </style>
 </head>
@@ -124,11 +147,18 @@
                 <a class="nav-link" href="javascript:void(0)">Contact Admin</a>
               </li>
             </ul>
-            <form class="d-flex">
+          </div>
+          <div class="justify-content-center">
+            <form class="d-flex justify-content-center searchgroup">
               <input class="form-control me-2" type="text" placeholder="Search">
               <button class="btn btn-primary btn-custom" type="button">Search</button>
             </form>
           </div>
+          <ul class="navbar-nav me-2">
+            <li class="nav-item">
+              <a class="nav-link signlink" href="javascript:void(0)">Logout</a>
+            </li>
+          </ul>
         </div>
       </nav>
       
@@ -136,61 +166,146 @@
         <div class="row">
             <div class="col-3">
                 <div class="book-head">Reserved Slots:</div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        07:30 a.m. - 09:00 a.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed occupiedleft" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        09:15 a.m. - 10:45 a.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="">Win Metawin</a></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        11:00 a.m. - 12:30 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                        12:45 p.m. - 02:15 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                        02:30 p.m. - 04:00 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed occupiedleft" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                        04:15 p.m. - 05:45 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="">Gloc 9</a></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+                        06:00 p.m. - 07:30 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                </div>
                 
             </div>
             <div class="col-7">
                 <div class="row">
-                    <div class="col-sm">
-                        <div class="card maincomp">
-                            <div class="card-header text-center">
-                              BOARD
-                            </div>
-                         </div>
+                    <div class = "col-sm container labs">
+                      <div class="labs ml-auto">
+                          <div class="labbuttons">
+                              <input type="radio" class="btn-check" name="options-lab" id="first-lab" autocomplete="off" checked>
+                              <label class="btn btn-outline-success w-20" for="first-lab">GK301</label>
+
+                              <input type="radio" class="btn-check" name="options-lab" id="second-lab" autocomplete="off">
+                              <label class="btn btn-outline-success w-20" for="second-lab">GK302</label>
+                              
+                              <input type="radio" class="btn-check" name="options-lab" id="third-lab" autocomplete="off">
+                              <label class="btn btn-outline-success w-20" for="third-lab">GK303</label>
+
+                              <input type="radio" class="btn-check" name="options-lab" id="fourth-lab" autocomplete="off">
+                              <label class="btn btn-outline-success w-20" for="fourth-lab">GK304</label>
+                              
+                              <input type="radio" class="btn-check" name="options-lab" id="fifth-lab" autocomplete="off">
+                              <label class="btn btn-outline-success w-20" for="fifth-lab">GK305</label>
+                          </div>
+                      </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <div class="card maincomp">
-                            <div class="card-header comp-active">
+                        <div class="card maincomp comp-whole">
+                            <div class="card-header card-header-comp comp-active">
                               1
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               2
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               3
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               4
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               5
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
@@ -198,46 +313,46 @@
                 <div class="row">
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               6
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               7
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               8
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               9
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               10
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
@@ -245,46 +360,46 @@
                 <div class="row">
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               11
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               12
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header comp-full">
                               13
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               14
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header comp-full">
                               15
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
@@ -292,46 +407,46 @@
                 <div class="row">
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               16
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               17
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               18
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               19
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
                     <div class="col-sm">
                         <div class="card maincomp">
-                            <div class="card-header">
+                            <div class="card-header card-header-comp">
                               20
                             </div>
-                            <div class="card-body">
+                            <div class="card-body card-body-comp">
                             </div>
                          </div>
                     </div>
@@ -415,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!---
                 <div class="laboratories">
                     <div class="dropdown">
                         <button class="btn btn-custom dropdown-toggle labdrop" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -430,6 +545,7 @@
                         </div>
                       </div>
                 </div>
+                -->
 
                 <hr>
                 
@@ -456,12 +572,17 @@
                 <div class="anonymity">
                     <div>Anonymous:</div>
                     <div class="anonybuttons">
-                        <input type="radio" class="btn-check" name="options-outlined" id="secondary-outlined" autocomplete="off" checked>
-                        <label class="btn btn-outline-secondary anonyyes" for="secondary-outlined">Yes</label>
-
-                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
                         <label class="btn btn-outline-success anonyno" for="success-outlined">No</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="secondary-outlined" autocomplete="off">
+                        <label class="btn btn-outline-secondary anonyyes" for="secondary-outlined">Yes</label>
                     </div>
+                </div>
+
+                <div class="technician">
+                  <div>Name:</div>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
                 </div>
 
                 <button type="button" class="btn btn-success w-100 reservebutton">Reserve</button>
