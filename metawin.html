@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>User Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="./profiles.css" rel="stylesheet">
+  
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="https://upload.wikimedia.org/wikipedia/tl/e/ed/DLSU_Logo_Clear_Background.png"> AnimoLabs Reserve</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Labs</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0)">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Contact Admin</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary btn-custom" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="all-content">
+         <div class="container-fluid">
+            <div class="row h-100">
+                <div class="col-9  ">
+                    <div class="row h-40 ">
+                        <div class="col-2 d-flex justify-content-center align-items-center ">
+                            <div class="profile-photo ">
+                                <img src="data:image/jpeg;base64,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" alt="Profile Photo">
+                            </div>
+                        </div>
+                        <div class="col-2  d-flex align-items-center">
+                            <h1 class="profile-name">Win Metawin</h1>
+                        </div>
+                        <div class="col-8 d-flex flex-column align-items-end right-padding">
+                            <div class="button-container1 btn-spacing">
+                                <button class="btn btn-success edit-button" onclick="window.open('edit-profile-page-bootstrap.html', 'newwindow', 'width=800,height=600'); return false;">Edit Profile</button>
+                            </div>
+                            <div class="button-container">
+                                <button class="btn btn-dark delete-button">Delete Profile</button>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <div class="row h-50 ">
+                        <div class="row-4 ">
+                            <div class="profile-section">
+                                <h2 class="profile-section-title">Contact</h2>
+                                <div class="profile-section-content">
+                                Phone Number: 099147585XX<br></br>
+                                Email address:winmetawin@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-4 ">
+                            <div class="profile-section">
+                                <h2 class="profile-section-title">Biography</h2>
+                                <div class="profile-section-content">
+                                    Born in Vancouver, Canada, Win Metawin displayed an early passion for the environment and wildlife. Inspired by his biologist parents, he spent much of his childhood exploring the natural beauty of British Columbia. He pursued his passion further by obtaining a B.Sc. in Environmental Science from the Harvard University, followed by a M.Sc in Sustainable Development from the Massachusetts Institute of Technology (MIT). He is now pursuing his Ph.D. in De La Salle University.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-4 ">
+                            <div class="profile-section">
+                                <h2 class="profile-section-title">Links</h2>
+                                <div class="profile-section-content">
+                                    Win Metawin's Environmental Foundation: winmetawinenvironmentalfoundation.org
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 rounded">
+                    <div class="reservation-aside">
+                        <h2>Past Reservation/s</h2>
+                        <p>February 14 09:15 a.m. - 10:45 a.m. </p>
+                        <p>GK301 Computer 1</p>
+                        <p>Date of Request: February 13</p>
+                        <p>Time of Request: 11:07 a.m.</p>
+                        <hr></hr>
+                        <p>February 14 06:00 p.m. - 07:30 p.m. </p>
+                        <p>GK305 Computer 1</p>
+                        <p>Date of Request: February 13</p>
+                        <p>Time of Request: 2:45 p.m.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
