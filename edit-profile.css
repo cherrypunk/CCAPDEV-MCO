@@ -1,0 +1,177 @@
+
+.navbar-custom {
+    background-color: seagreen;
+    border-bottom: 1px solid white;
+    height: 9vh
+}
+.navbar-brand > img {
+    height: 5vh;
+    width: 5vh;
+}
+.btn-custom {
+    background-color: white;
+    color: seagreen;
+    border-color: white;
+}
+.btn-custom:hover {
+    background-color: seagreen;
+    color: white;
+    border-color: white;
+}
+.main-container{
+    height: 85vh;
+    margin-top: 1vh
+}
+.col-2 {
+    background-color: white;
+    padding: 2vh
+}
+.col-7 {
+    background-color: white;
+}
+.col-3 {
+    background-color: white;
+    padding: 2vh
+}
+.calendar {
+    font-size: 1.1vh;
+}
+.bg-gray {
+    background-color: lightgray;
+}
+.time {
+    margin-top: 1vh
+}
+.timedrop {
+    width: 100%
+}
+.btn-custom {
+    background-color: white;
+    color: black;
+
+}
+.btn-custom:hover {
+    background-color: seagreen;
+    color: white;
+    border-color: white;
+}
+.book-head {
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+.anonymity {
+    margin-top: 1vh;
+}
+.anonyyes {
+    width:48%
+}
+.anonyno {
+    width:48%
+}
+.reservebutton {
+    margin-top: 1vh;
+    background-color: seagreen;
+    color: white;
+    border-color: white;
+}
+.maincomp {
+    width: 100%;
+    margin-bottom: 2vh
+}
+.card-body-comp {
+    height:12vh
+}
+.card-header-comp {
+    background-color: mediumseagreen;
+    color: white
+}
+.comp-full {
+  background-color: seagreen;
+    color: lightgray
+}
+.comp-active {
+    background-color:mediumseagreen;
+    color: white;
+}
+.comp-whole {
+  border: 1px solid black;
+}
+.laboratories {
+    margin-top: 1vh;
+}
+.labdrop {
+    width: 100%
+}
+.labs {
+  margin-bottom: 1vh;
+}
+.occupiedleft {
+  background-color:seagreen;
+  color: white
+}
+.searchgroup {
+  margin-right: 2vw
+}
+.technician {
+  margin-top: 1vh;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #fff;
+color: #333;
+margin: 0;
+
+}
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+background-color: #4CAF50;
+}
+.logo {
+font-size: 30px;
+padding-left: 10px;
+color: #ffffff; 
+}
+
+.all{
+width:100%;
+}
+.container {
+max-width: 800px;
+margin: auto;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text2{
+width: 40%;
+padding: 5px;
+margin: 5px 0
+}
+.t, input[type="email"], textarea, input[type="file"] {
+width: 100%;
+padding: 5px;
+margin: 5px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
+color: white;
+}
+input[type="submit"] {
+background-color: seagreen;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background-color: seagreen;
+}
+
+.form-group {
+margin-bottom: 15px; 
+}
