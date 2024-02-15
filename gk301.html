@@ -1,0 +1,582 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Bootstrap Intro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+  
+  <style>
+    .navbar-custom {
+        background-color: seagreen;
+        border-bottom: 1px solid white;
+        height: 9vh
+    }
+    .navbar-brand > img {
+        height: 5vh;
+        width: 5vh;
+    }
+    .btn-custom {
+        background-color: white;
+        color: seagreen;
+        border-color: white;
+    }
+    .btn-custom:hover {
+        background-color: seagreen;
+        color: white;
+        border-color: white;
+    }
+    .main-container{
+        height: 85vh;
+        margin-top: 1vh
+    }
+    .col-2 {
+        background-color: white;
+        padding: 2vh
+    }
+    .col-7 {
+        background-color: white;
+    }
+    .col-3 {
+        background-color: white;
+        padding: 2vh
+    }
+    .calendar {
+        font-size: 1.1vh;
+    }
+    .bg-gray {
+        background-color: lightgray;
+    }
+    .time {
+        margin-top: 1vh
+    }
+    .timedrop {
+        width: 100%
+    }
+    .btn-custom {
+        background-color: white;
+        color: black;
+        border-color: black;
+    }
+    .btn-custom:hover {
+        background-color: seagreen;
+        color: white;
+        border-color: white;
+    }
+    .book-head {
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+    .anonymity {
+        margin-top: 1vh;
+    }
+    .anonyyes {
+        width:48%
+    }
+    .anonyno {
+        width:48%
+    }
+    .reservebutton {
+        margin-top: 1vh;
+        background-color: seagreen;
+        color: white;
+        border-color: white;
+    }
+    .maincomp {
+        width: 100%;
+        margin-bottom: 2vh
+    }
+    .card-body-comp {
+        height:12vh
+    }
+    .card-header-comp {
+        background-color: mediumseagreen;
+        color: white
+    }
+    .comp-full {
+      background-color: seagreen;
+        color: lightgray
+    }
+    .comp-active {
+        background-color:mediumseagreen;
+        color: white;
+    }
+    .comp-whole {
+      border: 1px solid black;
+    }
+    .laboratories {
+        margin-top: 1vh;
+    }
+    .labdrop {
+        width: 100%
+    }
+    .labs {
+      margin-bottom: 1vh;
+    }
+    .occupiedleft {
+      background-color:seagreen;
+      color: white
+    }
+    .searchgroup {
+      margin-right: 2vw
+    }
+    .technician {
+      margin-top: 1vh;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)">
+            <img src="https://upload.wikimedia.org/wikipedia/tl/e/ed/DLSU_Logo_Clear_Background.png"> AnimoLabs Reserve</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0)">Profile</a>
+              </li>
+            </ul>
+          </div>
+          <div class="justify-content-center">
+            <form class="d-flex justify-content-center searchgroup">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary btn-custom" type="button">Search</button>
+            </form>
+          </div>
+          <ul class="navbar-nav me-2">
+            <li class="nav-item">
+              <a class="nav-link signlink" href="login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <div class="main-container container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="book-head">Reserved Slots:</div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        07:30 a.m. - 09:00 a.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed occupiedleft" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        09:15 a.m. - 10:45 a.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="">Win Metawin</a></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        11:00 a.m. - 12:30 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                        12:45 p.m. - 02:15 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                        02:30 p.m. - 04:00 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed occupiedleft" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                        04:15 p.m. - 05:45 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><a href="">Gloc 9</a></div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+                        06:00 p.m. - 07:30 p.m.
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Available</div>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <div class = "col-sm container labs">
+                      <div class="labs ml-auto">
+                          <div class="labbuttons">
+                            <input type="radio" class="btn-check" name="options-lab" id="first-lab" autocomplete="off" checked>
+                            <label class="btn btn-outline-success w-20" for="first-lab">GK301</label>
+
+                            <button onclick="window.location.href='gk302.html'" target="_blank" class="btn btn-outline-success w-20">GK302</button>
+                            <button onclick="window.location.href='gk303.html'" target="_blank" class="btn btn-outline-success w-20">GK303</button>
+                            <button onclick="window.location.href='gk304.html'" target="_blank" class="btn btn-outline-success w-20">GK304</button>
+                            <button onclick="window.location.href='gk305.html'" target="_blank" class="btn btn-outline-success w-20">GK305</button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card maincomp comp-whole">
+                            <div class="card-header card-header-comp comp-active">
+                              1
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              2
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              3
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              4
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              5
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              6
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              7
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              8
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              9
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              10
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              11
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              12
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header comp-full">
+                              13
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              14
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header comp-full">
+                              15
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              16
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              17
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              18
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              19
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card maincomp">
+                            <div class="card-header card-header-comp">
+                              20
+                            </div>
+                            <div class="card-body card-body-comp">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-2">
+                <div class="book-head">Check:</div>
+                <div class="container calendar text-center justify-content-center">
+                    <div class="row">
+                        <div class="span12">
+                            <table class="table-condensed table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                      <th colspan="7">
+                                        <span class="btn-group">
+                                            <a class="btn"><i class="icon-chevron-left"></i></a>
+                                            <a class="btn active">February 2024</a>
+                                            <a class="btn"><i class="icon-chevron-right"></i></a>
+                                        </span>
+                                      </th>
+                                    </tr>
+                                    <tr>
+                                        <th>Su</th>
+                                        <th>Mo</th>
+                                        <th>Tu</th>
+                                        <th>We</th>
+                                        <th>Th</th>
+                                        <th>Fr</th>
+                                        <th>Sa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-gray  text-muted">28</td>
+                                        <td class="bg-gray  text-muted">29</td>
+                                        <td class="bg-gray  text-muted">30</td>
+                                        <td class="bg-gray  text-muted">31</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td class="btn-primary"><strong>14</strong></td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td class="bg-gray  text-muted">1</td>
+                                        <td class="bg-gray  text-muted">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!---
+                <div class="laboratories">
+                    <div class="dropdown">
+                        <button class="btn btn-custom dropdown-toggle labdrop" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Lab One
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Lab One</button>
+                          <button class="dropdown-item" type="button">Lab Two</button>
+                          <button class="dropdown-item" type="button">Lab Three</button>
+                          <button class="dropdown-item" type="button">Lab Four</button>
+                          <button class="dropdown-item" type="button">Lab Five</button>
+                        </div>
+                      </div>
+                </div>
+                -->
+
+                <hr>
+                
+                <div class="book-head">Book Now:</div>
+
+                <div class="time">
+                    <div class="dropdown">
+                        Time:
+                        <button class="btn btn-custom dropdown-toggle timedrop" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          07:30 a.m. - 09:00 a.m.
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">07:30 a.m. - 09:00 a.m.</button>
+                          <button class="dropdown-item" type="button">09:15 a.m. - 10:45 a.m.</button>
+                          <button class="dropdown-item" type="button">11:00 a.m. - 12:30 p.m.</button>
+                          <button class="dropdown-item" type="button">12:45 p.m. - 02:15 p.m.</button>
+                          <button class="dropdown-item" type="button">02:30 p.m. - 04:00 p.m.</button>
+                          <button class="dropdown-item" type="button">04:15 p.m. - 05:45 p.m.</button>
+                          <button class="dropdown-item" type="button">06:00 p.m. - 07:30 p.m.</button>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="anonymity">
+                    <div>Anonymous:</div>
+                    <div class="anonybuttons">
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                        <label class="btn btn-outline-success anonyno" for="success-outlined">No</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="secondary-outlined" autocomplete="off">
+                        <label class="btn btn-outline-secondary anonyyes" for="secondary-outlined">Yes</label>
+                    </div>
+                </div>
+
+                <div class="technician">
+                  <div>Name:</div>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+                </div>
+
+                <button type="button" class="btn btn-success w-100 reservebutton">Reserve</button>
+                
+            </div>
+        </div>
+      </div>
+
+</body>
+</html> 
