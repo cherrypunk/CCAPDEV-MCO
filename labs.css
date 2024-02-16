@@ -78,10 +78,10 @@
     margin-bottom: 2vh
 }
 .card-body-comp {
-    height:12vh
+    height:11vh
 }
 .card-header-comp {
-    background-color: mediumseagreen;
+    background-color: #42d679;
     color: white
 }
 .comp-full {
@@ -89,7 +89,7 @@
     color: lightgray
 }
 .comp-active {
-    background-color:mediumseagreen;
+    background-color:#42d679;
     color: white;
 }
 .comp-whole {
@@ -119,4 +119,28 @@
 }
 .deleteright {
     margin-right: 1vw;
+}
+.legendbox1 {
+    background-color: #42d679;
+    border: 1px solid black;
+    display: inline;
+    color: #42d679;
+    margin-right: 1vh;
+}
+.legendbox2 {
+    background-color: seagreen;
+    border: 1px solid black;
+    display: inline;
+    color: seagreen;
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+.monthcalendar {
+    background-color: seagreen;
+    color: white;
+    padding-left: 3.5vh;
+    padding-right: 3.5vh;
+}
+.calendargroup {
+    height:5vh
 }
