@@ -128,3 +128,12 @@ text-align: left;
     margin-right: 5px;
     color:white;
 }
+
+.searchleftlinks {
+    color: seagreen;
+    font-size: 3vh;
+}
+
+.searchmain {
+    margin: 3vh;
+}

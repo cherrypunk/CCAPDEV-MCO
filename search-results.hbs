@@ -1,0 +1,13 @@
+    {{>profile-navbar}}
+    <div class="search-results-container searchmain">
+        {{#if users.length}}
+            <h2>Search Results for "{{searchTerm}}"</h2>
+            <ul>
+                {{#each users}}
+                    <li><a class="searchleftlinks" href="/profile/{{email}}">{{name}}</a></li> 
+                {{/each}}
+            </ul>
+        {{else}}
+            <p>No results found for "{{searchTerm}}"</p>
+        {{/if}}
+    </div>

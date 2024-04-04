@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dashboard/{{email}}">
+            <img src="https://upload.wikimedia.org/wikipedia/tl/e/ed/DLSU_Logo_Clear_Background.png"> AnimoLab
+            Reserve</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/profile/{{email}}">Profile</a>
+                </li>
+            </ul>
+        </div>
+        <div class="justify-content-center">
+            <form action="/search/{{email}}" method="post" class="d-flex justify-content-center searchgroup">
+                <input name="search_input" class="form-control me-2" type="text" placeholder="Search"id="search_input">
+                <button class="btn btn-primary btn-custom" type="submit" id="searchbtn" >Search</button>
+            </form>
+        </div>
+        <ul class="navbar-nav me-2">
+            <li class="nav-item">
+                <a class="nav-link signlink" href="/">Logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
