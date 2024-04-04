@@ -1,0 +1,65 @@
+{{> profile-navbar}}
+<div class="all-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9  ">
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center ">
+                        <div class="profile-photo">
+                            <img src="{{picture}}" alt="Profile Photo">
+                        </div>
+                    </div>
+                    <div class="col-2  d-flex align-items-center">
+                        <h1 class="profile-name">{{name}}</h1>
+                    </div>
+                    <div class="col-8 d-flex flex-column align-items-end right-padding">
+                        <div class="button-container1 btn-spacing">
+                            <button id="edit-profile" class="btn btn-success edit-button">Edit
+                                Profile</button>
+                        </div>
+                        <div class="button-container">
+                            <button id="delete-profile" class="btn btn-dark delete-button">Delete Profile</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="row-4 ">
+                        <div class="profile-section">
+                            <h2 class="profile-section-title">Contact</h2>
+                            <div class="profile-section-content">
+                                Phone Number: {{phone}}<br></br>
+                                Email address:{{email}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-4 ">
+                        <div class="profile-section">
+                            <h2 class="profile-section-title">Biography</h2>
+                            <div class="profile-section-content">
+                                {{bio}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 rounded">
+                <div class="reservation-aside">
+                    <h2>Past Reservation/s</h2>
+                    {{#each reservations}}
+
+                    <p>{{reservation_date}} {{time_of_reservation}} </p>
+                    <p>{{lab_name}} Computer {{seat_number}}</p>
+                    <p>Date of Request: {{date_when_reserved}}</p>
+                    <p>Time of Request: {{time_when_reserved}} </p>
+                    <hr>
+                    </hr>
+                    {{/each}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

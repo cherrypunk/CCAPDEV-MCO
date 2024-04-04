@@ -3,123 +3,165 @@
     border-bottom: 1px solid white;
     height: 9vh
 }
-.navbar-brand > img {
+
+.navbar-brand>img {
     height: 5vh;
     width: 5vh;
 }
+
 .btn-custom {
     background-color: white;
     color: seagreen;
     border-color: white;
 }
+
 .btn-custom:hover {
     background-color: seagreen;
     color: white;
     border-color: white;
 }
-.main-container{
+
+.main-container {
     height: 85vh;
     margin-top: 1vh
 }
+
 .col-2 {
     background-color: white;
     padding: 2vh
 }
+
 .col-7 {
     background-color: white;
 }
+
 .col-3 {
     background-color: white;
     padding: 2vh
 }
+
 .calendar {
     font-size: 1.5vh;
 }
+
 .bg-gray {
     background-color: lightgray;
 }
+
 .time {
     margin-top: 1vh
 }
+
 .timedrop {
     width: 100%
 }
+
 .btn-custom {
     background-color: white;
     color: black;
     border-color: black;
 }
+
 .btn-custom:hover {
     background-color: seagreen;
     color: white;
     border-color: white;
 }
+
 .book-head {
     font-size: 3vh;
     margin-bottom: 1vh;
 }
+
 .anonymity {
     margin-top: 1vh;
 }
+
 .anonyyes {
-    width:48%
+    width: 48%
 }
+
 .anonyno {
-    width:48%
+    width: 48%
 }
+
 .reservebutton {
     margin-top: 1vh;
     background-color: seagreen;
     color: white;
     border-color: white;
 }
+
 .maincomp {
     width: 100%;
     margin-bottom: 2vh
 }
+
 .card-body-comp {
-    height:11vh
+    height: 11vh
 }
+
 .card-header-comp {
     background-color: #42d679;
     color: white
 }
+
 .comp-full {
-  background-color: seagreen;
+    background-color: gray;
     color: lightgray
 }
+
+.comp-some {
+    background-color: seagreen;
+    color: lightgray
+}
+
 .comp-active {
-    background-color:#42d679;
+    background-color: #42d679;
     color: white;
 }
+
 .comp-whole {
-  border: 2px solid black;
+    border: 2px solid black;
 }
+
 .laboratories {
     margin-top: 1vh;
 }
+
 .labdrop {
     width: 100%
 }
+
+.roomdrop {
+    width: 38%
+}
+
 .labs {
-  margin-bottom: 1vh;
+    margin-bottom: 1vh;
 }
+
 .occupiedleft {
-  background-color:seagreen;
-  color: white
+    background-color: seagreen;
+    color: white
 }
+
 .searchgroup {
-  margin-right: 2vw
+    margin-right: 2vw
 }
+
 .technician {
-  margin-top: 1vh;
+    margin-top: 1vh;
 }
+
 .leftlinks {
     color: seagreen;
 }
+
 .deleteright {
     margin-right: 1vw;
 }
+
 .legendbox1 {
     background-color: #42d679;
     border: 1px solid black;
@@ -127,6 +169,7 @@
     color: #42d679;
     margin-right: 1vh;
 }
+
 .legendbox2 {
     background-color: seagreen;
     border: 1px solid black;
@@ -135,17 +178,29 @@
     margin-right: 1vh;
     margin-left: 1vh;
 }
+
+.legendbox3 {
+    background-color: gray;
+    border: 1px solid black;
+    display: inline;
+    color: gray;
+    margin-right: 1vh;
+    margin-left: 1vh;
+}
+
 .monthcalendar {
     background-color: seagreen;
     color: white;
     padding-left: 3.5vh;
     padding-right: 3.5vh;
 }
+
 .calendargroup {
-    height:5vh
+    height: 5vh
 }
+
 .calweight {
     font-weight: bold;
     color: white;
     background-color: seagreen;
-  }
+}

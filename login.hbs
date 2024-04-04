@@ -1,0 +1,28 @@
+<div class="login-main">
+  <!-- partial:index.partial.html -->
+  {{> login-nav}}
+  <div class="login-form">
+    <form name="read-user" action="dashboard" method="post">
+      <h1>Login</h1>
+      <div class="content">
+        <div class="input-field">
+          <input name="email" type="email" placeholder="Email" autocomplete="nope">
+        </div>
+        <div class="input-field">
+          <input name="password" type="password" placeholder="Password" autocomplete="new-password">
+        </div>
+        <div class="input-field">
+          <input type="checkbox" placeholder="Password" autocomplete="new-password">Remember Me?
+        </div>
+      </div>
+      <div class="action">
+
+        <button id="login" target="_blank">Sign in</button>
+      </div>
+    </form>
+    <div class="action register" action="register" method="get">
+      <button id="register" target="_blank">Register</button>
+    </div>
+  </div>
+  <!-- partial -->
+</div>
